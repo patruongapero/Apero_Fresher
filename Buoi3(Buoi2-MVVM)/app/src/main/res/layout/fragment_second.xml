@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.second.SecondFragment"
+        android:background="@color/login_background"
+        android:paddingHorizontal="@dimen/_30sdp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="108dp"
+            android:layout_height="126dp"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/img_girl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.976"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/second_fragment_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.179"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="31dp"
+            android:text="@string/second_fragment_full_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/first_fragment_background_email"
+            android:drawableLeft="@drawable/icon_user"
+            android:drawablePadding="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:hint="@string/second_fragment_full_name"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/second_fragment_password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtEmail"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/first_fragment_background_email"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:hint="@string/second_fragment_password"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/second_fragment_password_onfirmation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="@+id/edtPassword"
+            app:layout_constraintStart_toStartOf="@+id/edtPassword"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+        <EditText
+            android:id="@+id/edtRePassword"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/first_fragment_background_email"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:hint="Confim Password"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/txt_signup"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="66dp"
+            android:background="@drawable/stroke_button"
+            android:gravity="center"
+            android:text="@string/second_fragment_signup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/edtRePassword"
+            app:layout_constraintStart_toStartOf="@+id/edtRePassword"
+            app:layout_constraintTop_toBottomOf="@+id/edtRePassword" />
+
+        <TextView
+            android:id="@+id/txt_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/second_fragment_back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txt_signup"
+            app:layout_constraintStart_toStartOf="@+id/txt_signup"
+            app:layout_constraintTop_toBottomOf="@+id/txt_signup" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
